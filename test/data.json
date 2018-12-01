@@ -1,0 +1,5 @@
+[
+	{"Month":"Jan","Oil":50,"Gold":40,"Coal":30,"Steel":20},
+	{"Month":"Feb","Oil":40,"Gold":30,"Coal":20,"Steel":10},
+	{"Month":"Mar","Oil":30,"Gold":20,"Coal":10,"Steel":5}
+]
