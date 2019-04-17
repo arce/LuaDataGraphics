@@ -1,8 +1,8 @@
-require "RectCatAxis"
-require "RectNumAxis"
-require "GroupedBarGraph"
-require "Legend"
-require "Label"
+require "src/RectCatAxis"
+require "src/RectNumAxis"
+require "src/GroupedBarGraph"
+require "src/Legend"
+require "src/Label"
 
 local f
 local mouseX=0
@@ -12,8 +12,6 @@ local selection2 = {}
 
 function setup()
 	size(700,350)
-	f = loadFont("data/Vera.ttf",11)
-	textFont(f)
 end
 
 function draw()
@@ -22,7 +20,7 @@ function draw()
 	local months = {"Jan","Feb","Mar"}
 	local investments = {"Oil","Gold","Coal","Steel"}
 	local values = {{50,40,30},{40,30,20},{30,20,10},{20,10,5}}
-	local colors = {"red","blue","yellow","green"}
+	local colors = {0xFF0000,0x0000FF,0xFF00FF,0x00FF00}
 
 	RectCatAxis(60,200,150,BOTTOM,months,10)
 	RectNumAxis(60,50,150,LEFT,0,50,10,10)

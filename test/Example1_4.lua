@@ -1,9 +1,7 @@
-require "CircNumAxis"
+require "src/CircNumAxis"
 
 function setup()
 	size(640,320)
-	f = loadFont("data/Vera.ttf",11)
-	textFont(f)
 end
 
 function draw()
@@ -19,3 +17,4 @@ function draw()
 	translate(450,100)	
 	CircNumAxis(100, 0, 1000, 100, 10)
 end
+
