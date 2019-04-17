@@ -1,9 +1,7 @@
-require "CircCatAxis"
+require "src/CircCatAxis"
 
 function setup()
 	size(640,320)
-	f = loadFont("data/Vera.ttf",11)
-	textFont(f)
 end
 
 function draw()
