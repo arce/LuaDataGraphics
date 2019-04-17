@@ -11,3 +11,11 @@ function tableMax(data)
 	end
 	return value
 end
+
+function mouseOver(x,y,w,h)
+  if ((x < mouseX) and (mouseX < x+w) and 
+    (y < mouseY) and (mouseY <y+h)) 
+  then return true
+  else return false
+  end
+end

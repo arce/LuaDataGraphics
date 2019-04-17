@@ -24,13 +24,13 @@ function GroupedBar(x, y, w, h, data, colors, mode, gap, overlap,
 			fill(colors[j])
 			if (mode == VERTICAL) then
 				rect(x+pos, y+h-barHeight, barWidth, barHeight)
-			--	if contains(point[1],point[2]) then
-			--		selection[i..":"..j] = {x=point[1],y=point[2],data=data[j][i]};
-			--	end
+				if mouseOver(x+pos, y+h-barHeight, barWidth, barHeight) then
+					selection[i..":"..j] = {x=mouseX,y=mouseY,data=data[j][i]};
+				end
 			elseif (mode == HORIZONTAL) then
 				rect(x, y+pos, barHeight, barWidth)
-				if contains(point[1],point[2]) then
-					selection[i..":"..j] = {x=point[1],y=point[2],data=data[j][i]};
+				if mouseOver(x+pos, y+h-barHeight, barWidth, barHeight) then
+					selection[i..":"..j] = {x=mouseX,y=mouseY,data=data[j][i]};
 				end
 			end
 		end
